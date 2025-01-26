@@ -1,0 +1,58 @@
+/* Overall styling for the Pokémon details page */
+.pokemon-details {
+    background-color: bisque; /* Bisque background color */
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 50px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #333; /* Darker text for readability */
+}
+
+/* Header styling */
+.pokemon-details h1 {
+    font-size: 2.5rem;
+    font-family: 'Arial', sans-serif;
+    color: #ff6347; /* Tomato color for header */
+    margin-bottom: 20px;
+}
+
+/* Pokémon image styling */
+.pokemon-details img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Text styling for height, weight, and type */
+.pokemon-details p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Type styling */
+.pokemon-details span {
+    background-color: #ffebcd; /* Light bisque background for types */
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 5px;
+    font-weight: bold;
+    color: #8b4513; /* Darker text color */
+}
+
+/* Hover effect on types */
+.pokemon-details span:hover {
+    background-color: #ff6347; /* Tomato color when hovered */
+    color: white;
+}
+.pokemon-title {
+    font-size: 1rem; 
+    display: flex;
+    align-items: flex-start; 
+    margin-left: 2rem;
+    
+}

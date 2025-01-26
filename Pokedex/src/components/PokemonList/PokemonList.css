@@ -1,0 +1,52 @@
+.pokemon-list-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    text-align: center;  /* Ensures the text inside <h1> is centered */
+    margin: 0;  /* Remove any default margin */
+}
+ .pokemon-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+ }
+
+
+
+ .page-controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 2rem;
+    margin-left: 1rem;
+    font-weight: bold;
+    border: none;
+    /* background-color: #ff7f50; softer salmon shade */
+    border-radius: 12px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);    */
+    gap: 15px; /* Adds space between the buttons */
+}
+
+.page-controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    border: 2px solid #ff7f50; /* matching button border */
+    border-radius: 8px;
+    color: salmon;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.page-controls button:hover {
+    background-color: #ff7f50; /* matches the container color */
+    color: white;
+    border-color: tomato;
+}
+
+.page-controls button:focus {
+    outline: none;
+}
