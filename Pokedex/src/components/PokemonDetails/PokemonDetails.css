@@ -56,3 +56,78 @@
     margin-left: 2rem;
     
 }
+/* Similar Pokémon Section */
+
+.similar-pokemon {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.similar-pokemon h2 {
+    font-size: 1.8rem;
+    color: #ff6347; /* Tomato color */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Pokémon List Container */
+.pokemon-list-similar {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-between; /* Spread items evenly */
+    gap: 20px; /* Space between cards */
+    margin: 0 auto; /* Center align the list */
+    max-width: 960px; /* Set max width to ensure proper layout */
+}
+
+/* Individual Pokémon Card */
+.pokemon-similar {
+    background: bisque;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    width:700px;
+    /* width: calc(60% - 20px); Ensures 3 items per row */
+    box-sizing: border-box; /* Includes padding and margin in the width calculation */
+    max-width: 220px; /* Prevents oversized cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover Effect */
+.pokemon-similar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Pokémon Image */
+.pokemon-similar img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Pokémon Name */
+.pokemon-similar p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+    text-transform: capitalize;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 900px) { /* Tablets */
+    .pokemon-similar {
+        width: calc(50% - 20px); /* 2 Pokémon per row */
+    }
+}
+
+@media (max-width: 600px) { /* Mobile */
+    .pokemon-similar {
+        width: calc(100% - 20px); /* 1 Pokémon per row */
+        
+    }
+}

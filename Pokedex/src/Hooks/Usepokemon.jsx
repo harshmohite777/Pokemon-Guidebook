@@ -2,8 +2,7 @@ import './Usepokemon.css';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-function Usepokemon() {
-    const Default_Url = "https://pokeapi.co/api/v2/pokemon";
+function Usepokemon(Default_Url) {
     const [pokemonList, setPokemonList] = useState([]);
     const [pokedexurl, setPokedexurl] = useState("https://pokeapi.co/api/v2/pokemon");
     const [nexturl, setNexturl] = useState(null);

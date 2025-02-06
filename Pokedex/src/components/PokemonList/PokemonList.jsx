@@ -4,7 +4,9 @@ import Pokemon from "../Pokemon/Pokemon";  // Adjusted import path
 import Usepokemon from '../../Hooks/Usepokemon';
 
 function PokemonList() {
-    const { pokedexurl, setPokedexurl, nexturl, prevurl, pokemonList } = Usepokemon();
+    const Default_Url = "https://pokeapi.co/api/v2/pokemon";
+
+    const { pokedexurl, setPokedexurl, nexturl, prevurl, pokemonList } = Usepokemon(Default_Url);
 
     return (
         <div className="pokemon-list-wrapper">
