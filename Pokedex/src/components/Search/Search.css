@@ -2,5 +2,9 @@
     width: 50%;
     padding: 2rem;
     margin: 1 rem;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+
+
 
 }
