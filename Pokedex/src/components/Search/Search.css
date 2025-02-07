@@ -1,10 +1,25 @@
-#search-pokemon{
-    width: 50%;
-    padding: 2rem;
-    margin: 1 rem;
-    border: 1px solid #ccc;
+#search-pokemon {
+    width: 27%;
+    padding: 1rem;
+    margin: 1rem auto;
+    border: 2px solid #8B5E3C; /* A darker shade for contrast */
     border-radius: 30px;
-
-
-
+    background-color: bisque;
+    font-size: 1.2rem;
+    text-align: center;
+    outline: none;
+    transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
+
+#search-pokemon:hover {
+    width: 30%;
+    background-color: #e6c7a1; /* Slightly darker bisque shade */
+}
+
+#search-pokemon:focus {
+    width: 35%;
+    background-color: #e5b87e; /* More contrast when focused */
+    border-color: #7a4b2b;
+}
+
+
